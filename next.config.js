@@ -8,11 +8,7 @@ const nextConfig = {
                 port: '',
             }
         ],
-        unoptimized: true,
     },
-    trailingSlash: true,
-    output: 'export',
-    pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
     webpack: (config) => {
         config.module.rules.push({
             test: /\.html$/,
