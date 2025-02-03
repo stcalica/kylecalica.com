@@ -5,27 +5,42 @@ import Image from 'next/image'
 const portfolioData = [
     {
         img: "https://placehold.co/500/png",
-        title: "Work 1",
+        title: "Spin And Destroy",
         link: "#"
     },
     {
         img: "https://placehold.co/500/png",
-        title: "Work 2",
+        title: "Crybaby Oakland",
         link: "#"
     },
     {
         img: "https://placehold.co/500/png",
-        title: "Work 3",
+        title: "Ad Arcade",
         link: "#"
     },
     {
         img: "https://placehold.co/500/png",
-        title: "Work 4",
+        title: "Vanthe",
         link: "#"
     },
     {
         img: "https://placehold.co/500/png",
-        title: "Work 5",
+        title: "Briiz",
+        link: "#"
+    },
+    {
+        img: "https://placehold.co/500/png",
+        title: "Yin Yoni",
+        link: "#"
+    },
+    {
+        img: "https://placehold.co/500/png",
+        title: "Listing Link - Real Estate Chat Bots",
+        link: "#"
+    },
+    {
+        img: "https://placehold.co/500/png",
+        title: "Listing Link - Real Estate Chat Bots",
         link: "#"
     }
 ]

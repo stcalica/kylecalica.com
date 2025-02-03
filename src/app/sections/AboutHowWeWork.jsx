@@ -14,18 +14,23 @@ const AboutHowWeWork = () => {
     const stickySection = useRef()
     const stickyData = [
         {
-            title: "01. Project research",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            title: "01. Forming – Meet & Greet",
+            content: "We start with a conversation. Whether you're a business, creative, or entrepreneur, we discuss your vision, challenges, and goals to see how I can help."
         },
         {
-            title: "02. Sketches and design",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            title: "02. Storming – Evaluation & Strategy",
+            content: "This is where we break things down. We identify obstacles, set clear goals, and align on expectations. I analyze your current setup and propose a tailored strategy."
         },
         {
-            title: "03. Seleted concept",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            title: "03. Norming – Onboarding & Execution",
+            content: "With a roadmap in place, we onboard you into streamlined systems, tools, and processes. From marketing automation to operations, we make sure everything runs smoothly."
+        },
+        {
+            title: "04. Performing – Deliver & Optimize",
+            content: "This is where ideas come to life. I execute the plan, track progress, and refine as we go. The goal is sustainable growth and long-term impact."
         }
-    ]
+    ];
+
 
     const initAnime = () => {
         const timeline = gsap.timeline()

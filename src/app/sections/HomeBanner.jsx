@@ -14,8 +14,8 @@ const HomeBanner = () => {
                 <div className='row justify-center relative z-0 mx-0 w-full'>
                     <div className='col-xl-6 col-lg-8'>
                         <div className="text-center relative">
-                            <h1 className='heading-2 font-bold text-white mb-[50px] w-[82%] mx-auto xl:w-full xl:text-[50px] xl:leading-[60px] sm:text-[40px] sm:mb-[30px]'>Take your ideas to the next level</h1>
-                            <p className='text-[18px] w-full mx-auto mb-[50px] xl:w-[65%] sm:mb-[30px] sm:w-[80%] xs:w-full'>We design simple things beautifully <br /> We love what we do.</p>
+                            <h1 className='heading-2 font-bold text-white mb-[50px] w-[82%] mx-auto xl:w-full xl:text-[50px] xl:leading-[60px] sm:text-[40px] sm:mb-[30px]'>Turn Ideas Into Impact – Build, Grow, Automate.</h1>
+                            <p className='text-[18px] w-full mx-auto mb-[50px] xl:w-[65%] sm:mb-[30px] sm:w-[80%] xs:w-full'>I help businesses and creatives scale with tech, automation, and marketing—without the guesswork.</p>
                             <MagneticButton buttonClass="bg-[#6e5afd] py-[20px] px-[55px] rounded-[35px]">
                                 <Link href="/contact" className="text font-poppins">Contact Us</Link>
                             </MagneticButton>

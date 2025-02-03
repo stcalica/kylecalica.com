@@ -10,19 +10,9 @@ import 'swiper/css';
 const TeamData = [
   {
     img: "https://placehold.co/100/png",
-    name: "Yohan A.",
-    designation: "Frontend Developer",
-  },
-  {
-    img: "https://placehold.co/100/png",
-    name: "Amelia C.",
-    designation: "Web & UI Designer",
-  },
-  {
-    img: "https://placehold.co/100/png",
-    name: "Nathan T.",
-    designation: "Branding & UX",
-  },
+    name: "Kyle Calica",
+    designation: "Promoter // Developer // MarketingOps",
+  }
 ];
 
 const AboutOurTeam = () => {
@@ -49,8 +39,8 @@ const AboutOurTeam = () => {
       <div className="container">
         <div className="row justify-center mb-[90px]">
           <div className="col-xl-6 col-lg-8 col-md-10 text-center">
-            <h2 className="mb-[30px] text-white font-semibold">Our Team</h2>
-            <p> Our team is dedicated to creating a website or app that best represents your brand, boosts online presence & drives sales growth</p>
+            <h2 className="mb-[30px] text-white font-semibold">Who I Am</h2>
+            <p> I started as a music promoter and venue manager, learning firsthand how artists and venues struggle with booking, marketing, and operations. Now, I use tech-driven marketing and automation to help artists and music businesses scale without burning out. Whether it's streamlining promo, booking strategy, or growth marketing, I help bridge the gap between music and tech. </p>
           </div>
         </div>
 

@@ -39,12 +39,10 @@ const Footer = () => {
                         <h3 className="heading-6 text-white font-semibold mb-[30px] sm:mb-[15px]">Contact us</h3>
                         <ul>
                             <li className="flex gap-x-[15px] mb-[10px]">
-                                <Image width={17} height={25} src="/assets/icons/phone.svg" alt="phone icon" />
-                                <a className="hover:text-white transition-all" href="tel:+91919879879879row justify-between gap-y-10">+91 9879879879</a>
                             </li>
                             <li className="flex gap-x-[15px]">
                                 <Image width={17} height={25} src="/assets/icons/mail.svg" alt="mail icon" />
-                                <a className="hover:text-white transition-all" href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "info@garudasolutions.com"}`}>{process.env.NEXT_PUBLIC_MAIL_ID || "info@garudasolutions.com"}</a>
+                                <a className="hover:text-white transition-all" href={`mailto:${"kycalica@gmail.com"}`}>{"kycalica@gmail.com"}</a>
                             </li >
                         </ul >
                     </div >
@@ -52,14 +50,13 @@ const Footer = () => {
                         <h3 className="heading-6 text-white font-semibold mb-[30px] sm:mb-[15px]">Follow us on:</h3>
                         <ul className="flex items-center gap-x-[25px]">
                             <li><a href="#" className="hover:opacity-50 transition-all"><Image width={17} height={29} src="/assets/icons/facebook.svg" alt="facebook icon" /></a></li>
-                            <li><a href={process.env.NEXT_PUBLIC_TWITTER_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/twitter.svg" alt="twitter icon" /></a></li>
-                            <li><a href={process.env.NEXT_PUBLIC_INSTA_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
+                            <li><a href={"https://instagram.com/itsfrownz" || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
                         </ul>
                     </div>
                 </div >
             </div >
         </footer >
-    )
+    
 }
 
 export default Footer

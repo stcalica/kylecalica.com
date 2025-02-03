@@ -10,20 +10,20 @@ const HomeFeatures = () => {
     const featuresData = [
         {
             icon: "https://placehold.co/70/png",
-            title: "User-Centric Design",
-            description: "Deliver an exceptional user experience (UX) with our intuitive and aesthetically pleasing user interface (UI) design."
+            title: "Org-Centric Systems",
+            description: "I design workflows and tools that fit how your team naturally works, ensuring efficiency without disrupting your process."
         },
         {
             icon: "https://placehold.co/70/png",
-            title: "Secure Web Hosting",
-            description: "Keep your website safe and sound with our reliable and secure hosting services. We ensure your site runs smoothly with minimal downtime."
+            title: "Data-Driven Insights",
+            description: "Leverage business intelligence and analytics to make informed decisions. I help you track, measure, and optimize for success."
         },
         {
             icon: "https://placehold.co/70/png",
-            title: "CMS",
-            description: "Take control of your website effortlessly with our user-friendly CMS solutions. Update, edit, and manage your content efficiently."
+            title: "Transparency & Trust",
+            description: "No fluff, no hidden agendas. I provide clear communication, honest feedback, and data-backed recommendations every step of the way."
         }
-    ]
+    ];
 
     return (
         <section className="relative">
