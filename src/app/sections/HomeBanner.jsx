@@ -26,22 +26,7 @@ const HomeBanner = () => {
                     <MagneticButton buttonClass="bg-[#ffdb1e] mb-[10px] overflow-hidden rounded-[114px]">
                         <Image width={150} height={225} className="h-[auto]" src="https://placehold.co/150/png" alt="yash s." />
                     </MagneticButton>
-                    <h4 className='text-white font-poppins -mb-[5px]'>Yohan A.</h4>
-                    <span className='font-poppins text-white'>Frontend Developer</span>
-                </div>
-                <div className="absolute text-center z-[1] bottom-[50px] right-[25%] xl:right-[20%] lg:hidden">
-                    <MagneticButton buttonClass="bg-[#6e5aef] mb-[10px] overflow-hidden rounded-full py-[15px] px-[15px]">
-                        <Image width={433} height={577} className="w-[150px] h-[auto] inline-flex" src="https://placehold.co/150/png" alt="akhil k." />
-                    </MagneticButton>
-                    <h4 className='text-white font-poppins -mb-[5px]'>Amelia C.</h4>
-                    <span className='font-poppins text-white'>Web &amp; UI Designer</span>
-                </div>
-                <div className="absolute text-center z-[1] top-[150px] right-[13%] xl:right-[10%] lg:hidden">
-                    <MagneticButton buttonClass="bg-[#ff83af] mb-[10px] overflow-hidden rounded-full py-[15px]">
-                        <Image width={150} height={150} className="inline-flex" src="https://placehold.co/150/png" alt="niken p." />
-                    </MagneticButton>
-                    <h4 className='text-white font-poppins -mb-[5px]'>Nathan T.</h4>
-                    <span className='font-poppins text-white'>Branding and UX</span>
+                    <h4 className='text-white font-poppins -mb-[5px]'>Kyle Calica</h4>
                 </div>
             </section>
         </>
