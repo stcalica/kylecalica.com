@@ -1,0 +1,107 @@
+$radius: 200px;
+
+.buble-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  filter: url("#filter");
+  filter: blur(50px);
+
+  @screen xs {
+    left: -60px !important;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.svg-layer {
+  position: absolute;
+}
+
+.ball {
+  width: $radius;
+  height: $radius;
+  position: absolute;
+  top: calc(50% - calc($radius / 2));
+  left: calc(50% - calc($radius / 2));
+
+  &:before {
+    background: var(--bubble-bg);
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+
+  &:nth-child(1) {
+    transform: translate(-$radius * 1.1);
+    animation: x-axis-lateral 15s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-lateral 10s infinite 0.1s alternate ease-in-out;
+    }
+  }
+
+  &:nth-child(2) {
+    animation: x-axis 15s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis 10s infinite 0.5s alternate ease-in-out;
+    }
+  }
+
+  &:nth-child(3) {
+    transform: translate($radius * 1.1, $radius * 1.3);
+    animation: x-axis-lateral 15s infinite alternate ease;
+    &:before {
+      animation: y-axis-lateral 10s infinite 0.4s alternate ease-in-out;
+    }
+  }
+}
+
+@keyframes x-axis {
+  0% {
+    transform: translate(-$radius * 1.6);
+    background: var(--bubble-bg);
+  }
+  100% {
+    transform: translate($radius * 1.6);
+    background: var(--bubble-bg);
+  }
+}
+
+@keyframes y-axis {
+  0% {
+    transform: translateY($radius * 0.7);
+    background: var(--bubble-bg);
+  }
+  100% {
+    transform: translateY(-$radius * 1.1) scale(0.8);
+    background: var(--bubble-bg);
+  }
+}
+
+@keyframes x-axis-lateral {
+  0% {
+    transform: translate(-$radius * 0.6);
+    background: var(--bubble-bg);
+  }
+  100% {
+    transform: translate($radius * 0.6);
+    background: var(--bubble-bg);
+  }
+}
+
+@keyframes y-axis-lateral {
+  0% {
+    transform: translateY(calc($radius / 5));
+    background: var(--bubble-bg);
+  }
+  100% {
+    transform: translateY(-$radius);
+    background: var(--bubble-bg);
+  }
+}

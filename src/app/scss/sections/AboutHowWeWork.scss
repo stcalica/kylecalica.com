@@ -1,0 +1,7 @@
+.sticky-section {
+  clip-path: circle(0.5% at 50% 600px);
+
+  @screen lg {
+    clip-path: circle(100% at 50% 600px);
+  }
+}

@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --section-padding-y: 120px 0;
+
+  @screen lg {
+    --section-padding-y: 90px 0;
+  }
+
+  @screen md {
+    --section-padding-y: 75px 0;
+  }
+
+  @screen sm {
+    --section-padding-y: 50px 0;
+  }
+
+  // Colors - dark
+  --body-bg: #080a0e;
+  --heading-color: #fff;
+  --text-color: #828282;
+}
+
+.font-nunitosans {
+  font-family: var(--font-nunitosans);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+body {
+  font-family: var(--font-nunitosans);
+  background-color: var(--body-bg);
+  font-size: 16px;
+  line-height: 25px;
+  color: #828282;
+}
+
+section {
+  padding: var(--section-padding-y);
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+}
+
+h1,
+.heading-1 {
+  font-size: 112px;
+  line-height: 1;
+
+  @screen xl {
+    font-size: 80px;
+  }
+
+  @screen lg {
+    font-size: 70px;
+  }
+
+  @screen sm {
+    font-size: 60px;
+  }
+}
+
+h2,
+.heading-2 {
+  font-size: 56px;
+  line-height: 65px;
+
+  @screen md {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @screen sm {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+h3,
+.heading-3 {
+  font-size: 45px;
+  line-height: 55px;
+
+  @screen lg {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @screen md {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  @screen sm {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+h4,
+.heading-4 {
+  font-size: 35px;
+  line-height: 45px;
+
+  @screen xl {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @screen lg {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  @screen sm {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+h5,
+.heading-5 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h6,
+.heading-6 {
+  font-size: 25px;
+  line-height: 30px;
+
+  @screen lg {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @screen sm {
+    font-size: 18px;
+  }
+
+  @screen xs {
+    font-size: 16px;
+  }
+}
+
+// Bootstrap Grid
+@import "scss/grid/bootstrap-grid.scss";
+
+// Global Components
+// Process-anime
+.process-anim {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  --process-color: #000;
+
+  span {
+    align-items: center;
+    background-color: var(--process-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+
+    @screen md {
+      height: 20px;
+      width: 20px;
+    }
+
+    @screen sm {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &:before,
+  &:after {
+    background-color: var(--process-color);
+    box-shadow: 0 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    z-index: -15;
+    animation: zoomIn infinite 3s;
+  }
+
+  &:before {
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    animation-delay: 1s;
+  }
+
+  &:after {
+    height: calc(100% + 15px);
+    width: calc(100% + 15px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+// Inputs
+input,
+textarea {
+  background-color: transparent;
+  border-bottom: 1px solid #828282;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+
+  // Firefox 
+  &[type=number] {
+    -moz-appearance: textfield;
+
+    // Chrome, Safari, Edge, Opera 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+.floating-label {
+  position: relative;
+
+  label {
+    position: absolute;
+    font-size: 20px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @screen lg {
+      font-size: 18px;
+    }
+
+    @screen xs {
+      font-size: 15px;
+    }
+  }
+
+  input,
+  textarea {
+    &::placeholder {
+      font-size: 0;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      +label {
+        top: 0;
+        font-size: 13px;
+        color: white;
+      }
+    }
+  }
+}
+
+// Error message
+.error {
+  input {
+    border-color: red;
+  }
+
+  label {
+    color: red
+  }
+}

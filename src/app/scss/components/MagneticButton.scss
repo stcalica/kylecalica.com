@@ -1,0 +1,16 @@
+.magnetic-button {
+  cursor: pointer;
+  outline: none;
+  transition: color 0.1s linear, background 0.15s linear;
+
+  >span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    will-change: transform;
+  }
+}
+
+.magnetic-btn-wrapper {
+  perspective: 2000px;
+}

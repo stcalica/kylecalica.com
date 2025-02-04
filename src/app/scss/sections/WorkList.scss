@@ -1,0 +1,31 @@
+.portfolio-card {
+  &:hover {
+    .worklist-title {
+      &::before {
+        width: 50px;
+      }
+    }
+
+    .category {
+      color: #ffffff;
+    }
+  }
+
+  .worklist-title {
+    &::before {
+      transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+  }
+
+  .category {
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.portfolio-list .row>[class*=col-]:nth-child(odd) {
+  transform: translateY(150px);
+
+  @screen md {
+    transform: translateY(0);
+  }
+}
